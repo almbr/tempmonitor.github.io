@@ -109,6 +109,7 @@ fieldset[disabled] .btn-primary.active {
   border-radius: 3px;
   font-size: 18px;
   padding: 20px 40px;
+  margin: 15px 15px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
@@ -454,7 +455,7 @@ section h3.section-subheading {
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: #333;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
@@ -744,4 +745,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #ff3300;
+}
+
+i.symbolfil {
+    font-size: 8vh;
 }
