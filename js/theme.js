@@ -1,5 +1,5 @@
 var userFeed = new Instafeed({
-        get: 'tag',
+        get: 'tagged',
         tagName: 'mountains',
         accessToken: '9f126fc85a6b4578a80c6724983aed5a',
         limit: 6,
