@@ -3,8 +3,8 @@ var userFeed = new Instafeed({
         tagName: 'mountains',
         accessToken: '9f126fc85a6b4578a80c6724983aed5a',
         limit: 6,
-        target: 'instagram'
-        resolution : 'standard_resolution',
+        target: 'instagram',
+        resolution : 'standard_resolution'
 });
 
 $(document).ready(function(){
