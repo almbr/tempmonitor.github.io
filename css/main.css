@@ -104,3 +104,8 @@ hr {
 }
 
 
+#instagram img {
+    max-width: 50%;
+    padding: 10px;
+}
+
