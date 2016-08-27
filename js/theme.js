@@ -25,8 +25,6 @@ $(document).ready(function(){
 	});
     
     userFeed.run();
-
-    <script type="text/javascript" src="instafeed.min.js"></script>
     
     $('#constructionModal').modal('show');
     
