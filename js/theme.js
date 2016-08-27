@@ -1,7 +1,7 @@
 var userFeed = new Instafeed({
         get: 'tagged',
         tagName: 'mountains',
-        accessToken: '9f126fc85a6b4578a80c6724983aed5a',
+        clientId: '9f126fc85a6b4578a80c6724983aed5a',
         limit: 6,
         target: 'instagram',
         resolution : 'standard_resolution'
