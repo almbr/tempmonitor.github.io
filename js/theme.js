@@ -9,23 +9,34 @@ var userFeed = new Instafeed({
 
 $(document).ready(function(){
 	
-	//Check to see if the window is top if not then display button
-	$(window).scroll(function(){
-		if ($(this).scrollTop() > 10) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-	
-	//Click event to scroll to top
-	$('.scrollToTop').click(function(){
-		$('html, body').animate({scrollTop : 0},800);
-		return false;
-	});
+    //Scroll to top button
+        //Check to see if the window is top if not then display button
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 10) {
+                $('.scrollToTop').fadeIn();
+            } else {
+                $('.scrollToTop').fadeOut();
+            }
+        });
     
-    userFeed.run();
+        //Click event to scroll to top
+        $('.scrollToTop').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+            return false;
+        });
+
+    //Show instagram content
+        userFeed.run();
     
-    $('#constructionModal').modal('show');
+    //Scroll to main content
+        $('.header-scroll').click(function() {
+            $('html, body').animate({
+                scrollTop: $('.main-content').offset().top
+            }, 800);
+        });
+    
+    
+    //Show site is under construction modal
+        $('#constructionModal').modal('show');
     
 });
