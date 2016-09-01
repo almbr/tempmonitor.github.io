@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site </title>
+    <link>http://replace-this-with-your-hugo-site.com/post/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2016-08-30 07:25:59 &#43;0200 CEST</updated>
+
+    
+      
+        <item>
+          <title>test</title>
+          <link>http://replace-this-with-your-hugo-site.com/post/test/</link>
+          <pubDate>Tue, 30 Aug 2016 07:25:59 CEST</pubDate>
+          <author></author>
+          <guid>http://replace-this-with-your-hugo-site.com/post/test/</guid>
+          <description>&lt;p&gt;Hello World, this is a test.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

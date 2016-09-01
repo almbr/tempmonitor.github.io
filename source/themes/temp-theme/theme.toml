@@ -1,0 +1,12 @@
+name = "temp-theme"
+license = "MIT"
+licenselink = ""
+description = "Temp-theme is a theme for Hugo."
+tags = ["blog"]
+features = ["blog"]
+min_version = 0.15
+
+[author]
+    name = "Axel Nilsson"
+    homepage = "http://yet.unresolved.xyz/"
+

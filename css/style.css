@@ -2,6 +2,7 @@ body {
     background-image: url("../img/header.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 hr {
