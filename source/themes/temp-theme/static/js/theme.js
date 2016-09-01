@@ -37,6 +37,6 @@ $(document).ready(function(){
     
     
     //Show site is under construction modal
-        //$('#constructionModal').modal('show');
+        $('#constructionModal').modal('show');
     
 });
