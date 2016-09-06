@@ -24,7 +24,7 @@ $(document).ready(function(){
             $('html, body').animate({scrollTop : 0},800);
             return false;
         });
-
+    
     //Show instagram content
         userFeed.run();
     
@@ -33,10 +33,5 @@ $(document).ready(function(){
             $('html, body').animate({
                 scrollTop: $('.main-content').offset().top
             }, 800);
-        });
-    
-    
-    //Show site is under construction modal
-        $('#constructionModal').modal('show');
-    
+        });    
 });

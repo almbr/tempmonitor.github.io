@@ -67,7 +67,8 @@ hr {
 .main-content {
     padding-top: 45px;
     background: #fff;
-    
+    min-height: 100vh;
+    padding-bottom: 0px;
 }
 
 .footer {

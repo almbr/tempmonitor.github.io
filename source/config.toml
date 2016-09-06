@@ -1,4 +1,4 @@
 baseurl = "http:/tempmonitor.se/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Temp monitor"
 theme = "temp-theme"
