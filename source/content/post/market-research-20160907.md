@@ -5,7 +5,7 @@ title = "Market research"
 
 +++
 
-## Market research
+# Market research
 
 Our market research can now be found at [tempmonitor.se/form](http://tempmonitor.se/form), it takes only a minute and helps us a lot.
 

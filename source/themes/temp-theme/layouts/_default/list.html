@@ -8,7 +8,7 @@
         {{ range .Data.Pages }}
         
             <row>
-                <div class="col-md-12"><h4><a href="{{ .Permalink }}"> {{ .Title }}</a></h4></div>
+                <div class="col-md-12"><h2><a href="{{ .Permalink }}"> {{ .Title }}</a></h2></div>
             </row>
 
             <row>
@@ -22,10 +22,5 @@
     </div>
 
     {{ partial "pagination.html" . }}
-
-
-        
-
-
 {{ partial "footer.html" . }}
 
