@@ -1,8 +1,8 @@
 body {
-    background-image: url("../img/header.jpg");
+    background-image: url("../img/header.svg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    background-size: cover;
 }
 
 hr {
@@ -33,7 +33,7 @@ hr {
 }
 
 .header-start a:hover {
-    color: #ff3300;
+    color: #303030;
 }
 
 .header-info {
@@ -49,10 +49,14 @@ hr {
     color: #FFF;
 }
 
+.header-info hr {
+    border-color: #fff;
+}
+
 .btn-custom {
-    background-color: #ff3300;
-    color: white;
-    border-color: #ff3300;
+    background-color: #666666;
+    color: #fff;
+    border-color: #666666;
 }
 
 .btn-custom:hover {
@@ -92,7 +96,7 @@ hr {
         position: fixed;
         top: 50%;
         text-align: left;
-        color: #ff3300;
+        color: #666666;
     }
     
     .media-icons span {
@@ -105,11 +109,11 @@ hr {
 }   
 
 .media-icons a {
-    color: #ff3300;
+    color: #666666;
 }
 
 .scrollToTop{
-	color: #ff3300;
+	color: #666666;
 	position:fixed;
 	bottom:0px;
 	left:0px;
