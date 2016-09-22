@@ -1,3 +1,13 @@
+@font-face {
+    font-family: DS-Digital;
+    src: url("../fonts/ds-digital/DS-DIGI.ttf");
+}
+
+@font-face {
+    font-family: DS-Digital-Bold;
+    src: url("../fonts/ds-digital/DS-DIGIB.ttf");
+}
+
 body {
     background-image: url("../img/header.svg");
     background-repeat: no-repeat;
@@ -6,13 +16,14 @@ body {
 }
 
 hr {
-    border-color: #ff3300;
+    border-color: #008f00;
+    border-width: 3px;
 }
 
 .navbar-custom {
     background: #FFF;
-    border-color: #ff3300;
-    color: #ff3300;
+    border-color: #008f00;
+    color: #008f00;
 }
 
 .header-fill {
@@ -42,15 +53,24 @@ hr {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: #FFF;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
 }
 
 .header-info h1 {
     font-size: 50px;
-    color: #FFF;
+}
+
+.header-info h2 {
+    color: #666666;
+    font-size: 25px;
+    padding-bottom: 10px;
 }
 
 .header-info hr {
-    border-color: #fff;
+    border-color: #666666;
 }
 
 .btn-custom {
@@ -61,7 +81,7 @@ hr {
 
 .btn-custom:hover {
     color: #FFF;
-    background-color: #cc2900;
+    background-color: #005b00;
 }
 
 .software-btn {
@@ -83,11 +103,11 @@ hr {
     color: #FFF;
     border-style: solid;
     border-width: 2px 0 0 0;
-    border-color: #ff3300
+    border-color: #008f00
 }
 
 .media-icons {
-    color: #ff3300;
+    color: #008f00;
 }
 
 
@@ -105,7 +125,7 @@ hr {
 }
 
 .media-icons a:hover {
-    color: #cc2900;
+    color: #005b00;
 }   
 
 .media-icons a {
@@ -121,7 +141,7 @@ hr {
 }
 .scrollToTop:hover{
 	text-decoration:none;
-    color: #cc2900;
+    color: #005b00;
 }
 
 
@@ -148,3 +168,23 @@ hr {
     }
 }
 
+#clock span {
+    font-size: 25px;
+    font-family: DS-Digital-Bold;
+    background: #303030;
+    color: white;
+    padding: 15px 5px;
+    margin: 25px 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000;
+}
+
+.logo-temp {
+    font-family: DS-Digital-Bold;
+    color: #34AB00;
+}
+
+.logo-monitor {
+    font-family: DS-Digital;
+    color: #666666;
+}
