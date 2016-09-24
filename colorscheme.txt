@@ -1,5 +1,3 @@
-Orange red: #ff3300
-Dark orange red: #cc2900
 Gray: #303030
 Light gray: #666666
 Dark green: 005b00
