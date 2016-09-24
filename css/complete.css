@@ -65,6 +65,7 @@ hr {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
+    display: block;
 }
 
 .header-info h1 {
@@ -177,14 +178,13 @@ hr {
 }
 
 #clock span {
-    font-size: 25px;
+    font-size: 32px;
     font-family: DS-Digital-Bold;
     background: #303030;
-    color: white;
-    padding: 15px 5px;
-    margin: 25px 5px;
+    color: red;
+    padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 10px #000;
+    margin: 5px;
 }
 
 .logo-temp {

@@ -35,22 +35,10 @@ $(document).ready(function(){
             }, 800);
         });    
 
-    
-    //Count down
-    $('#clock').countdown('2017/01/01').on('update.countdown', function(event) {
-        var $this = $(this).html(event.strftime(''
-            + '<span>%w</span>'
-            + '<span>%d</span>'
-            + '<span>%H</span>'
-            + '<span>%M</span>'
-            + '<span>%S</span>'));
+        
+   $('#clock').countdown("2017/01/11", function(event) {
+       var $this = $(this).html(event.strftime('<span>%D</span><span>days</span>'));
     });
-
-    
-   /* $('#clock').countdown("2020/10/10", function(event) {
-      var totalHours = event.offset.totalDays * 24 + event.offset.hours;
-      $(this).html(event.strftime('<span>' + totalHours + ' : %M : %S </span>'));
-    });*/
     
 
 });
