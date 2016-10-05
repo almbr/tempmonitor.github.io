@@ -7,6 +7,6 @@ features = ["blog"]
 min_version = 0.15
 
 [author]
-    name = "Axel Nilsson"
-    homepage = "http://yet.unresolved.xyz/"
+    name = "Temp monitor"
+    homepage = "https://tempmonitor.se/"
 
