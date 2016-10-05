@@ -1,35 +1,48 @@
+
 {{ partial "header_before.html" . }}
 {{ partial "header_after.html" . }}
 
-    <!-- Header cover -->
-	<div style="position: relative; background-color:#222125; background-size:cover; height:100vh; background-repeat: no-repeat;">
-		<!-- Prototype img, with tilt -->
-		<!--<img src="img/prototyp.svg" class="hero__img tilt-effect" data-tilt-options='{ "opacity" : 0.6, "movement": { "perspective" : 1500, "translateX" : 10, "translateY" : 10, "translateZ" : 2, "rotateX" : 3, "rotateY" : 3 } }'>
-		-->
-		<img src="img/prototyp.svg" style="display: block; margin: auto; position: absolute; top:55%; left:50%; transform: translate(-50%, -50%); height:70vh;">
-	</div>
-	<!-- Header cover end -->
 
-	<!-- Content -->
-	<div class="col-sm-6" style="height:100vh; background-color:#c2e8b5;">
-		<div class="row" style="height:50vh;">
-			<div class="col-xs-6" style="height:100%; background-color:#e2db8e;"></div>
-			<div class="col-xs-6" style="height:100%; background-color:#8ee2dd;"></div>
-		</div>
-	</div>
-	<div class="col-sm-6" style="height:100vh; background-color:#e8b5b5;">
-		<p>
-		Temp monitor is simple to use and plugs in with a micro-USB cable to your computer. Install our simple software and you're ready to go. When installed and plugged in the computer software collects information and sends it to the monitor. Temp monitor is simple to use and plugs in with a micro-USB cable to your computer. Install our simple software and you're ready to go. When installed and plugged in the computer software collects information and sends it to the monitor. Temp monitor is simple to use and plugs in with a micro-USB cable to your computer. Install our simple software and you're ready to go. When installed and plugged in the computer software collects information and sends it to the monitor.
-		</p>
-	</div>
-	<div class="col-sm-6" style="height:100vh;">
-		<div class="row" style="height:50vh; background-color:#8ee2dd;"></div>
-		<div class="row" style="height:50vh; background-color:#e8b5b5;"></div>
-	</div>
-	<div class="col-sm-6" style="height:100vh;">
-		<div class="row" style="height:50vh; background-color:#97d6c1;"></div>
-		<div class="row" style="height:50vh; background-color:#e2db8e"></div>
-	</div>
-	<!-- Content end -->
+    <div class="header-fill">
+        <div class="header-info">
+            <h1><span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span></h1>
+            <hr>
+            <h2>Releasing in</h2>
+            <div id="clock"></div>
+        
+    
+        </div>
+        <div class="header-start">
+            <a href="#" class="header-scroll">
+                <i class="fa fa-angle-double-down fa-4x"></i>
+            </a>
+        </div>
+    </div>
+
+   <div class="main-content">    
+            <div class="container">    
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>What?</h2>
+                        <hr>
+                        <p>Temp monitor is an open source and hardware monitor to show system resources such as CPU and GPU temperature, fan speeds, RAM usage, GPU and CPU load.</p>
+                        
+                        <h2>Why?</h2>
+                        <hr>                        
+                        <p>There are similary products on the market such as fan speed controllers, but these usualy only show air temperature and fan speeds and not the actual temperatures of the components or any other information. Temp monitor instead shows the actual temperatures and information collected by the computer. This provide an easy way of monitor you computer while playing or using it as an server and can help optimizing computer performence, health and maximizing computer lifetime.</p>
+                        
+                        <p>Temp monitor comes with an open license meaning that if you feel that any function is missing or should be change you can take part in the design and programing.</p>
+                        
+                        <h2>How?</h2>
+                        <hr>
+                        <p>Temp monitor is simple to use and plugs in with a micro-USB cable to your computer. Install our simple software and you're ready to go. When installed and plugged in the computer software collects information and sends it to the monitor.</p>
+                        
+                        
+                    </div>
+                    <div class="col-md-4">
+                        {{ partial "sidebar.html" . }}                                               
+                    </div>
+                </div>
+            </div>
 
 {{ partial "footer.html" . }}
