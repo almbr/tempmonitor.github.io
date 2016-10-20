@@ -1,5 +1,5 @@
 /* Logo style */
-@font-face{ 
+@font-face{
 	font-family: 'DS-Digital-Bold';
 	src: url('../fonts/ds-digital/ds-digib.eot');
 	src: url('../fonts/ds-digital/ds-digib.eot?#iefix') format('embedded-opentype'),
@@ -7,7 +7,7 @@
 	     url('../fonts/ds-digital/ds-digib.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digib.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
 	font-family: 'DS-Digital';
 	src: url('../fonts/ds-digital/ds-digi.eot');
 	src: url('../fonts/ds-digital/ds-digi.eot?#iefix') format('embedded-opentype'),
@@ -15,7 +15,7 @@
 	     url('../fonts/ds-digital/ds-digi.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digi.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
 	font-family: 'DS-Digital-Italic';
 	src: url('../fonts/ds-digital/ds-digii.eot');
 	src: url('../fonts/ds-digital/ds-digii.eot?#iefix') format('embedded-opentype'),
@@ -23,7 +23,7 @@
 	     url('../fonts/ds-digital/ds-digii.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digii.svg#webfont') format('svg');
 }
-@font-face{ 
+@font-face{
 	font-family: 'DS-Digital-Italic-Bold';
 	src: url('../fonts/ds-digital/ds-digit.eot');
 	src: url('../fonts/ds-digital/ds-digit.eot?#iefix') format('embedded-opentype'),
@@ -31,7 +31,7 @@
 	     url('../fonts/ds-digital/ds-digit.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digit.svg#webfont') format('svg');
 }
-	
+
 .logo-temp {
     font-family: DS-Digital-Bold;
     color: #34AB00;
@@ -43,10 +43,58 @@
 }
 /* Logo style end */
 
+/* Div style */
+.text {
+	padding: 40px;
+	margin-right: -16px;
+}
+.text .h1, .h2, .h3, h1, h2, h3 {
+	margin: 0;
+}
+.text .p, p {
+	font-size: 1.6em;	/* Fallback */
+	font-size: 3.8vh;		/* Actual */
+}
+.text-header {
+	font-weight: 700;
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 36px;	/* Fallback */
+	font-size: 6vh;		/* Actual */
+}
+.text-middle {
+	display: table;
+}
+.text-middle p {
+	display: table-cell;
+	vertical-align: middle;
+}
+.picture {
+	padding: 0;
+}
+.picture img {
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+}
+.desciption i {
+	font-size: 0.8em;
+}
+.icon {
+	padding-top: 3vh;
+	text-align: center;
+}
+.icon i {
+	font-size:15vh;
+}
+/* Div style end */
+
 /* Link style */
 /* Credit to Mary Lou, Codrops, http://tympanus.net/codrops/2013/08/06/creative-link-effects/ */
 nav a {
-	position: relative;	
+	position: relative;
 }
 
 .cl-effect-3 a {
@@ -82,9 +130,10 @@ nav a {
 
 /* Footer style */
 .footer {
-	height:15vh; 
-	background-color:#222125; 
+	height:25vh;
+	background-color:#222125;
 	color:#aaa;
+	margin: 0;
 }
 .footer a {
 	text-decoration:none;
@@ -96,11 +145,29 @@ nav a {
 .footer a:hover {
 	color: #333;
 }
-.left-footer {
-	position:absolute; top:50%; transform:translateY(-50%); left:40px;
+
+@media (max-width: 768px) {
+	/* Social media icons */
+	.right-footer {
+		position:absolute; top:35%; transform:translateY(-50%); text-align:left; left:40px; letter-spacing: 5px;
+	}
+	/* Copy right text */
+	.left-footer {
+		position:absolute; bottom:10%; transform:translateY(-50%); left:40px;
+	}
 }
-.right-footer {
-	position:absolute; top:50%; transform:translateY(-50%); text-align:right; right:40px; letter-spacing: 5px;
+@media (min-width: 768px) {
+	/* Footer thin at big screen - fat at small screen */
+	.footer {
+		height:15vh;
+	}
+	/* Footer content on row at big screen - list at small screen */
+	.left-footer {
+		position:absolute; top:50%; transform:translateY(-50%); left:40px;
+	}
+	.right-footer {
+		position:absolute; top:50%; transform:translateY(-50%); text-align:right; right:40px; letter-spacing: 5px;
+	}
 }
 /* Footer style end */
 
@@ -136,7 +203,7 @@ nav a {
 	-webkit-user-select: none;  /* Chrome all / Safari all */
 	-moz-user-select: none;     /* Firefox all */
 	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;          /* Likely future */  
+	user-select: none;          /* Likely future */
 	href='index.html';
 }
 
@@ -193,7 +260,7 @@ nav a {
 
 /* Example Media Queries */
 @media screen and (max-width: 55em) {
-	
+
 	.cbp-af-header .cbp-af-inner {
 		width: 100%;
 	}
