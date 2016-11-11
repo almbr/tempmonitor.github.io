@@ -1,4 +1,4 @@
-  var num = 200; //number of pixels before modifying styles
+  var num = 400; //number of pixels before modifying styles
 
   $(window).bind('scroll', function () {
       if ($(window).scrollTop() > num) {
@@ -50,6 +50,11 @@ function toggle(id) {
     neutralisethis("shopselect");
     neutralisethis("aboutselect");
   }
+
+  // Scroll to Div
+  $('html, body').animate({
+        scrollTop: $("#anchor").offset().top
+    }, 400);
 }
 
 function stylethis(id) {

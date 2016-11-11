@@ -23,13 +23,13 @@
   <h1>
     <span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span>
   </h1>
-  <h3>Fixed (sticky) navbar on scroll</h3>
-  <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
-  <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+  <h3>Fixed (sticky)</h3>
+  <p>Scroll this page to see how.</p>
 </div>
 
+<span id="anchor"/>
 <!-- Nav -->
-<div id="main" data-spy="affix" data-offset-top="395">
+<div id="main" data-spy="affix" data-offset-top="400">
     <div id="menu">
       <a href="#/" id="homeselect" class="buttons" onclick="toggle(this.id)">Home</a>
       <a href="#shop" id="shopselect" onclick="toggle(this.id)" class="buttons">Shop</a>
@@ -42,6 +42,7 @@
 			<a class="fa fa-github" aria-hidden="true" href="https://github.com/TempMonitor" target="_blank"></a>
     </div>
 </div>
+
 
 <div class="page">
   <ng-view></ng-view> <!-- Main content -->
