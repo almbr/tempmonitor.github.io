@@ -12,7 +12,7 @@
 }
 #menu>a {
     text-decoration: none;
-    color: white;
+    color: #aaa;
 }
 #menu>a:hover {
     background-color: #ddd;
@@ -32,7 +32,7 @@
     line-height: 3em;
 }
 #logos>a {
-    color: white;
+    color: #aaa;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -51,7 +51,7 @@
 .buttons {
     text-decoration: none;
     color: white;
-    line-height: 41.6px;
+    line-height: 42px;
     display: block;
     float:left;
     -moz-transition: 0.5s linear;
@@ -85,8 +85,7 @@ body {
   margin-bottom: 50px;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+
 }
 .banner {
   background-color: #34AB00;
@@ -101,15 +100,39 @@ body {
   font-weight: 100;
   text-align: center;
 }
+.pointrow h1 {
+  margin-bottom: 0;
+  color: #555;
+}
+.pointrow p1 {
+  font-weight: 700;
+  color: #555;
+}
+@media screen and (min-width: 771px) {
+  .row {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .pointrow h1 { font-size: 77px; }
+  .pointrow p1 { font-size: 22px; }
+  .pointrow p { font-size: 18px; }
 }
 @media screen and (max-width: 770px)  { /* Breakpoint 1 */
+  .row {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 @media screen and (max-width: 600px) { /* Breakpoint 2 */
+  .pointrow h1 { font-size: 36px; }
+  .pointrow p1 { font-size: 18px; }
+  .pointrow p { font-size: 18px; }
 }
 @media screen and (max-width: 400px) {
   #logos {
     display: none;
   }
+
 }
 /* Document style end */
 
@@ -159,3 +182,47 @@ body {
     font-size: 1.5em;
 }
 /* Logo style end */
+
+/* Footer style */
+.footer {
+	height:25vh;
+	background-color:#222125;
+	color:#aaa;
+	margin: 0;
+}
+.footer a {
+	text-decoration:none;
+	color:#aaa;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.footer a:hover {
+	color: #797979;
+}
+/* Narrow screen */
+@media (max-width: 768px) {
+	/* Social media icons */
+	/*.right-footer {
+		position:absolute; top:30%; text-align:left; left:30px; letter-spacing: 5px;
+	}*/
+	/* Copy right text */
+	.left-footer {
+		position:absolute; top:50%; left:30px;
+	}
+}
+/* Broad screen */
+@media (min-width: 768px) {
+	/* Footer thin at big screen - fat at small screen */
+	.footer {
+		height:15vh;
+	}
+	/* Footer content on row at big screen - list at small screen */
+	.left-footer {
+		position:absolute; top:50%; transform:translateY(-50%); left:30px;
+	}
+	/*.right-footer {
+		position:absolute; top:50%; transform:translateY(-50%); text-align:right; right:30px; letter-spacing: 5px;
+	}*/
+}
+/* Footer style end */
