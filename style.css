@@ -95,6 +95,8 @@ body {
   margin-bottom: 50px;
   margin-left: 0;
   margin-right: 0;
+  display: flex;    /* Center content */
+  justify-content: center;
 
 }
 .banner {
@@ -199,6 +201,9 @@ body {
 	     url('../fonts/ds-digital/ds-digit.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digit.svg#webfont') format('svg');
 }
+p {
+  font-size: 16px;
+}
 
 .logo-temp {
     font-family: DS-Digital-Bold;
@@ -263,3 +268,42 @@ body {
     }
 }
 /* Instafeed style end */
+
+/* About page style */
+.presentation {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.presentation div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.header {
+  font-family: DS-Digital-Bold;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.portrait {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.portrait div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.portrait img {
+  width: 100%;
+}
+.portrait h1 {
+  font-size: 28px;
+  margin-top: 5px;
+}
+.portrait h2 {
+  font-size: 18px;
+  margin-top: 5px;
+}
+.portrait p {
+  font-size: 16px;
+}
+/* About page style end */
