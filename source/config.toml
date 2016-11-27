@@ -1,4 +1,0 @@
-baseurl = "https://tempmonitor.se/"
-languageCode = "en-us"
-title = "Temp monitor"
-theme = "temp-theme"
