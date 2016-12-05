@@ -1,3 +1,44 @@
+/* Document style */
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f3f3f3;
+  color: #777; /* Previously #aaa */
+  position: relative;
+  /*margin: 0;*/
+  padding-bottom: 100px;
+  min-height: 100%;
+  font-size: 20px;
+  padding-right: auto; /*15px in bootstrap.css*/
+     padding-left: auto;  /*idem*/
+     margin-right: auto;
+     margin-left: auto;
+}
+@media (max-width: 1200px) { body { font-size: 18px; }}
+@media (max-width: 767px) { body { font-size: 16px; }}
+
+
+@font-face{
+	font-family: 'Roboto';
+	src: url('../fonts/roboto/roboto.ttf') format('truetype');
+}
+@font-face{
+	font-family: 'Roboto Mono';
+	src: url('../fonts/roboto_mono/roboto_mono.ttf') format('truetype');
+}
+.row {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;    /* Center content */
+  justify-content: center;
+
+}
+
+/* Document style end */
+
 /* Nav style */
 .navbar-brand,
 .navbar-toggle,
@@ -23,116 +64,22 @@ header {
   background-position: right bottom;*/
   background-color: #4f924f;
   height: 90vh;
-  position: relative;
 }
 header .header-text {
-  position: absolute;
-  top: 60%;
-  left: 5%;
-  transform: translate(0, -50%);
 }
 header h1 {
-  margin-top: 0;
-  margin-bottom: 0;
   color: white;
   font-weight: bolder;
-  font-size: 10vw;
   font-family: 'Roboto', sans-serif;
 }
 header h2 {
-  margin-left: 1%;
-  margin-top: 0;
-  margin-bottom: 0;
   color: white;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
 header .btn-default {
-  margin-left: 1%;
-  margin-top: 20px;
-  margin-bottom: 0;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
-/* Document style */
-html {
-  height: 100%;
-}
-body {
-  background-color: #f3f3f3;
-  color: #777; /* Previously #aaa */
-  position: relative;
-  /*margin: 0;*/
-  padding-bottom: 100px;
-  min-height: 100%;
-}
-@font-face{
-	font-family: 'Roboto';
-	src: url('../fonts/roboto/roboto.ttf') format('truetype');
-}
-@font-face{
-	font-family: 'Roboto Mono';
-	src: url('../fonts/roboto_mono/roboto_mono.ttf') format('truetype');
-}
-.row {
-  width: 100%;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;    /* Center content */
-  justify-content: center;
-
-}
-.banner {
-  background-color: #34AB00;
-  width: 100%;
-  padding-left: 30px;
-  padding-top: 30px;
-  padding-bottom: 40px;
-  padding-right: 30px;
-  color: white;
-}
-.banner h2 {
-  font-weight: 100;
-  text-align: center;
-}
-.pointrow h1 {
-  margin-bottom: 0;
-  color: #555;
-}
-.pointrow p1 {
-  font-weight: 700;
-  color: #555;
-}
-@media screen and (min-width: 771px) {
-  .row {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .pointrow h1 { font-size: 77px; }
-  .pointrow p1 { font-size: 22px; }
-  .pointrow p { font-size: 18px; }
-}
-@media screen and (max-width: 770px)  { /* Breakpoint 1 */
-  .row {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media screen and (max-width: 600px) { /* Breakpoint 2 */
-  .pointrow h1 { font-size: 36px; }
-  .pointrow p1 { font-size: 18px; }
-  .pointrow p { font-size: 18px; }
-}
-@media screen and (max-width: 400px) {
-  #logos {
-    display: none;
-  }
-
-}
-/* Document style end */
 
 /* Logo style */
 @font-face{
@@ -163,20 +110,14 @@ body {
 	     url('../fonts/ds-digital/ds-digit.ttf') format('truetype'),
 	     url('../fonts/ds-digital/ds-digit.svg#webfont') format('svg');
 }*/
-p {
-  font-size: 16px;
-}
-
 .logo-temp {
     font-family: DS-Digital-Bold;
     color: #34AB00;
-    font-size: 1.5em;
 }
 
 .logo-monitor {
     font-family: DS-Digital;
     color: #666666;
-    font-size: 1.5em;
 }
 /* Logo style end */
 
@@ -205,67 +146,3 @@ p {
   position:absolute; top:50%; transform:translateY(-50%); left:30px;
 }
 /* Footer style end */
-
-/* Instafeed style */
-#instagram img {
-    width: 33%;
-    padding: 10px;
-    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-    -moz-transition: all 0.5s ease; /* Firefox */
-    -ms-transition: all 0.5s ease; /* IE 9 */
-    -o-transition: all 0.5s ease; /* Opera */
-    transition: all 0.5s ease
-}
-
-#instagram img:hover {
-    -ms-transform: scale(1.1, 1.1); /* IE 9 */
-    -webkit-transform: scale(1.1, 1.1); /* Safari */
-    transform: scale(1.1, 1.1);
-
-}
-
-@media screen and (min-width: 992px) {
-    #instagram img {
-        width: 16.5%;
-    }
-}
-/* Instafeed style end */
-
-/* About page style */
-.presentation {
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-.presentation div {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.header {
-  font-family: DS-Digital-Bold;
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.portrait {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.portrait div {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.portrait img {
-  width: 100%;
-}
-.portrait h1 {
-  font-size: 28px;
-  margin-top: 5px;
-}
-.portrait h2 {
-  font-size: 18px;
-  margin-top: 5px;
-}
-.portrait p {
-  font-size: 16px;
-}
-/* About page style end */
