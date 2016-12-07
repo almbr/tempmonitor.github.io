@@ -51,11 +51,13 @@ html { font-family: 'Roboto', sans-serif; }
 @media (max-width: 750px) { .row { margin-left: 15px; margin-right: 15px; }}
 
 /* Nav style */
+nav .logo-temp, nav .logo-monitor { font-size: 2em; }
 .navbar-brand, .navbar-toggle, .navbar-nav li a {
     line-height: 80px;
     height: 80px;
     padding-top: 0;
 }
+.navbar-brand:hover { opacity: 0.7; }
 .navbar-toggle {
   padding-right: 25px;
   padding-left: 25px;
@@ -68,18 +70,26 @@ html { font-family: 'Roboto', sans-serif; }
 }
 /* Nav style end */
 
-header {
+header { background-color: white; /* Previously #4f924f */ }
+header h1 { color: dimgrey; font-weight: bold; }
+header h2 { color: grey; }
+
+.header-index {
   /*background-image: url("/img/temporary.jpg");
   background-position: right bottom;*/
-  background-color: white;   /* Previously #4f924f */
   min-height: 60vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
 }
-header .logo-temp, .logo-monitor { font-size: 3em; }
-header h1 { color: dimgrey; font-size: 2em; font-weight: bold;}
-header h2 { color: grey; font-size: 1.3em; }
-header button { margin-top: 50px; }
+.header-index h1 { font-size: 2em; }
+.header-index h2 { font-size: 1.3em; }
+.header-index .logo-temp, .header-index .logo-monitor { font-size: 3em; }
+.header-index button { margin-top: 50px; }
+
+.header-subsite { min-height: 200px; }
+.header-subsite h2 { font-size: 2em; margin-top: 0; }
+.header-subsite .header-subsite-header { max-width: 500px; }
+
 
 .productshow .container-fluid {
   width: auto;
@@ -91,6 +101,7 @@ header button { margin-top: 50px; }
 }
 @media (max-width: 991px) { .productshow .container-fluid { height: 300px; margin-left: -60px; margin-right: -60px; }}
 @media (max-width: 750px) { .productshow .container-fluid { height: 300px; margin-left: -45px; margin-right: -45px; }}
+
 
 .pitch {
   background-color: #222125;
@@ -114,6 +125,22 @@ header button { margin-top: 50px; }
      width: 100%;
      height: 100%;
 }
+
+
+.personcard {
+  max-width: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.personcard-image { width: 100%; overflow: hidden; }
+.personcard-image img{ width: 100%; }
+.personcard-content { background-color: white; padding: 30px; }
+.personcard-content h3 { color: black; margin-top: 0; font-size: 1em; }
+.personcard-content p { font-size: 0.8em; }
+.personcard-content li { display:inline; font-size: 1em; padding-right: 0.5em;}
+
 
 /* Footer style */
 footer {
