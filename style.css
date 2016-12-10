@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;  /* Previously #f3f3f3 */
   color: #777; /* Previously #aaa */
   position: relative;
   /*margin: 0;*/
@@ -69,8 +69,9 @@ nav .logo-temp, nav .logo-monitor { font-size: 20px; }
 }
 .navbar {
   margin: 0;
-  background-color: #f3f3f3;
+  background-color: #f7f7f7;
   min-height: 0px;
+  border: none;
 }
 /* Nav style end */
 
