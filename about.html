@@ -23,8 +23,41 @@
 <body>
 
   <nav class="navbar navbar-default">
-    <a class="navbar-brand" href="/#"><span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span></a>
-  </nav>
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/#"><span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
   <header class="header-subsite container-fluid">
     <div class="row">
@@ -107,22 +140,22 @@
 
 
 
-	<footer>
+  <footer>
     <div class="container">
-  		<div class="row">
+      <div class="row">
         <div class="col-md-4">
-  			  <h1>Navigation</h1>
+          <h1>Navigation</h1>
           <ul class="list-unstyled">
             <li><a href="/#">Home</a></li>
-            <li><a href="/info/om-oss/#våra-tjänster">Shop</a></li>
-            <li><a href="/info/redaktionen/">Downloads</a></li>
-            <li><a href="/info/hitta-oss/">About us</a></li>
-            <li><a href="/info/redaktionen/">Documentation</a></li>
-            <li><a href="/info/lediga-tjänster/">Legal</a></li>
+            <li><a href="/product.html">Product</a></li>
+            <li><a href="/shop.html">Shop</a></li>
+            <li><a href="/downloads.html">Downloads</a></li>
+            <li><a href="/about.html">About us</a></li>
+            <li><a href="/legal.html">Legal</a></li>
           </ul>
         </div>
         <div class="col-md-4">
-  			  <h1>Contact us</h1>
+          <h1>Contact us</h1>
           <ul class="list-unstyled">
             <li><a href="mailto:contact@tempmonitor.se" target="_blank"><u>contact@tempmonitor.se</u></a></li>
             <li>+46 76 - 297 21 80</li>
@@ -130,7 +163,7 @@
           </ul>
         </div>
         <div class="col-md-4">
-  			  <h1>Social media</h1>
+          <h1>Social media</h1>
           <ul class="list-unstyled">
             <li><a href="https://www.facebook.com/tempmonitor/?ref=nf" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>&ensp;</li>
             <li><a href="https://www.instagram.com/tempmonitor/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
@@ -140,7 +173,7 @@
         </div>
       </div>
     </div>
-	</footer>
+  </footer>
 
 </body>
 </html>
