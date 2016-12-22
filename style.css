@@ -93,7 +93,7 @@ header h1 { color: dimgrey; font-weight: bold; }
 header h2 { color: grey; }
 
 .header-index {
-  background-image: url("/img/ProduktDisplayerLjus.jpg");
+  background-image: url("/img/produkt_displayer_ljus.jpg");
   background-position: center;
   background-size: cover;
   min-height: 50vh;
