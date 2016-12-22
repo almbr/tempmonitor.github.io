@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Example</title>
+  <title>Temp monitor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -42,27 +39,7 @@
 <body>
 
   <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/#"><span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span></a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Downloads</a></li>
-        </ul>
-      </div>
-    </div>
+    <a class="navbar-brand" href="/#"><span class="logo-temp">Temp</span><span class="logo-monitor">monitor</span></a>
   </nav>
 
   <header class="header-subsite container-fluid">
@@ -86,10 +63,10 @@
             <h3>Axel Nilsson</h3>
             <p>Product development</p>
             <ul class="list-unstyled">
-              <a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
+              <a href="https://github.com/nilssonaxel" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="mailto:axel@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -104,10 +81,10 @@
             <h3>Erik Almbratt</h3>
             <p>Web development</p>
             <ul class="list-unstyled">
-              <a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
+              <a href="https://github.com/tsuum" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="mailto:erik@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -122,10 +99,10 @@
             <h3>Oskar Ogarp</h3>
             <p>CEO & Economics</p>
             <ul class="list-unstyled">
-              <a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
+              <!--<a><li><i class="fa fa-github" aria-hidden="true"></i></li></a>-->
+              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="mailto:oskar@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -141,22 +118,22 @@
 
 
 
-  <footer>
+	<footer>
     <div class="container">
-      <div class="row">
+  		<div class="row">
         <div class="col-md-4">
-          <h1>Navigation</h1>
+  			  <h1>Navigation</h1>
           <ul class="list-unstyled">
             <li><a href="/#">Home</a></li>
-            <li><a href="/product.html">Product</a></li>
-            <li><a href="/shop.html">Shop</a></li>
-            <li><a href="/downloads.html">Downloads</a></li>
-            <li><a href="/about.html">About us</a></li>
-            <li><a href="/legal.html">Legal</a></li>
+            <li><a href="/info/om-oss/#våra-tjänster">Shop</a></li>
+            <li><a href="/info/redaktionen/">Downloads</a></li>
+            <li><a href="/info/hitta-oss/">About us</a></li>
+            <li><a href="/info/redaktionen/">Documentation</a></li>
+            <li><a href="/info/lediga-tjänster/">Legal</a></li>
           </ul>
         </div>
         <div class="col-md-4">
-          <h1>Contact us</h1>
+  			  <h1>Contact us</h1>
           <ul class="list-unstyled">
             <li><a href="mailto:contact@tempmonitor.se" target="_blank"><u>contact@tempmonitor.se</u></a></li>
             <li>+46 76 - 297 21 80</li>
@@ -164,7 +141,7 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h1>Social media</h1>
+  			  <h1>Social media</h1>
           <ul class="list-unstyled">
             <li><a href="https://www.facebook.com/tempmonitor/?ref=nf" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a>&ensp;</li>
             <li><a href="https://www.instagram.com/tempmonitor/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
@@ -174,7 +151,7 @@
         </div>
       </div>
     </div>
-  </footer>
+	</footer>
 
 </body>
 </html>

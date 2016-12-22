@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: #f7f7f7;  /* Previously #f3f3f3 */
+  background-color: #f3f3f3;
   color: #777; /* Previously #aaa */
   position: relative;
   /*margin: 0;*/
@@ -41,23 +41,39 @@ html { font-family: 'Roboto', sans-serif; }
 .logo-temp { font-family: DS-Digital-Bold; color: #34AB00; }
 .logo-monitor { font-family: DS-Digital; color: #666666; }
 
+main h1, main h2 { color: #34AB00; font-weight: 500; }
+
+
 .row {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 90px;
+  margin-right: 90px;
 }
-@media (max-width: 991px) { .row { margin-left: 30px; margin-right: 30px; }}
+@media (max-width: 991px) { .row { margin-left: 50px; margin-right: 50px; }}
 @media (max-width: 750px) { .row { margin-left: 15px; margin-right: 15px; }}
 
+.row-center p, .row-center h1, .row-center h2, .row-center span, .row-center img { max-width: 600px; }
+
+.disabled { opacity: 0.6; pointer-events: none; cursor: default; }
+
+button, [type=button] {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 20px;
+  background-color: #f3f3f3;
+}
+
+
 /* Nav style */
-nav .logo-temp, nav .logo-monitor { font-size: 20px; }
-.navbar a { font-size: 15px; }
+nav .logo-temp, nav .logo-monitor { font-size: 1.4em; }
 .navbar-brand, .navbar-toggle, .navbar-nav li a {
-    line-height: 30px;
-    height: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    line-height: 60px;
+    height: 60px;
+    padding-top: 0;
+    font-size: 0.9em;
 }
 .navbar-brand:hover { opacity: 0.7; }
 .navbar-toggle {
@@ -65,29 +81,28 @@ nav .logo-temp, nav .logo-monitor { font-size: 20px; }
   padding-left: 25px;
   margin: 0;
   border: 0;
-  border-radius: 0;
 }
 .navbar {
   margin: 0;
-  background-color: #f7f7f7;
-  min-height: 0px;
-  border: none;
+  background-color: #f3f3f3;
 }
 /* Nav style end */
 
-header { background-color: white; /* Previously #4f924f */ }
+header { background-color: white; overflow: hidden; /* Previously #4f924f */ }
 header h1 { color: dimgrey; font-weight: bold; }
 header h2 { color: grey; }
 
 .header-index {
-  /*background-image: url("/img/temporary.jpg");
-  background-position: right bottom;*/
-  min-height: 60vh;
+  background-image: url("/img/ProduktDisplayerLjus.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
   padding-top: 10vh;
   padding-bottom: 10vh;
+  position: relative;
 }
-.header-index h1 { font-size: 2em; }
-.header-index h2 { font-size: 1.3em; }
+.header-index h1 { font-size: 2em; color: #f3f3f3; }
+.header-index h2 { font-size: 1.3em; color: #f3f3f3; }
 .header-index .logo-temp, .header-index .logo-monitor { font-size: 3em; }
 .header-index button { margin-top: 50px; }
 
@@ -95,17 +110,19 @@ header h2 { color: grey; }
 .header-subsite h2 { font-size: 2em; margin-top: 0; }
 .header-subsite .header-subsite-header { max-width: 500px; }
 
+.under-construction { position: absolute; right: 0; top: 0; height: 20vh; margin-right: -1vh; margin-top: -1vh;}
 
-.productshow .container-fluid {
+
+.productshow .container {
   width: auto;
-  height: 450px;
+  height: 300px;
   margin: 0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-@media (max-width: 991px) { .productshow .container-fluid { height: 300px; margin-left: -60px; margin-right: -60px; }}
-@media (max-width: 750px) { .productshow .container-fluid { height: 300px; margin-left: -45px; margin-right: -45px; }}
+@media (max-width: 991px) { .productshow .container-fluid { height: 200px; margin-left: -60px; margin-right: -60px; }}
+@media (max-width: 750px) { .productshow .container-fluid { height: 200px; margin-left: -45px; margin-right: -45px; }}
 
 
 .pitch {
@@ -144,7 +161,7 @@ header h2 { color: grey; }
 .personcard-content { background-color: white; padding: 30px; }
 .personcard-content h3 { color: black; margin-top: 0; font-size: 1em; }
 .personcard-content p { font-size: 0.8em; }
-.personcard-content li { display:inline; font-size: 1em; padding-right: 0.5em; cursor: pointer }
+.personcard-content li { display: inline; font-size: 1em; padding-right: 0.5em; cursor: pointer; }
 
 
 /* Footer style */
@@ -164,7 +181,7 @@ footer h1 {
   border-bottom-width: 1px;
 }
 footer a { color: #f3f3f3; }
-footer a:hover, a:active, a:visited { color: #f3f3f3; }
+footer a:hover, footer a:active, footer a:visited { color: #f3f3f3; }
 footer i {
   width: 1em;
   margin-right: 0.5em;
