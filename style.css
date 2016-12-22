@@ -75,7 +75,9 @@ nav .logo-temp, nav .logo-monitor { font-size: 1.4em; }
     padding-top: 0;
     font-size: 0.9em;
 }
-.navbar-brand:hover { opacity: 0.7; }
+.navbar-toggle .icon-bar { width: 26px; height: 4px; }
+.navbar-toggle { padding: 16px; }
+.navbar-brand:hover { opacity: 0.8; }
 .navbar-toggle {
   padding-right: 25px;
   padding-left: 25px;
