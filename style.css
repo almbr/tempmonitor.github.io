@@ -2,6 +2,58 @@ html {
   height: 100%;
 }
 
+body {
+  background-color: #f3f3f3;
+  color: #777; /* Previously #aaa */
+  position: relative;
+  /*margin: 0;*/
+  padding-bottom: 600px;  /* Footer height */
+  min-height: 100%;
+  font-size: 20px;
+}
+@media (max-width: 991px) { body { font-size: 18px; }}
+@media (max-width: 750px) { body { font-size: 16px; }}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto/roboto.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../fonts/roboto_mono/roboto_mono.ttf') format('truetype');
+}
+html { font-family: 'Roboto', sans-serif; }
+
+@font-face {
+	font-family: 'DS-Digital-Bold';
+	src: url('fonts/ds-digital/ds-digib.eot');
+	src: url('fonts/ds-digital/ds-digib.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/ds-digital/ds-digib.ttf') format('truetype'),
+	     url('fonts/ds-digital/ds-digib.svg#webfont') format('svg');
+}
+@font-face {
+	font-family: 'DS-Digital';
+	src: url('fonts/ds-digital/ds-digi.eot');
+	src: url('fonts/ds-digital/ds-digi.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/ds-digital/ds-digi.ttf') format('truetype'),
+	     url('fonts/ds-digital/ds-digi.svg#webfont') format('svg');
+}
+.logo-temp { font-family: DS-Digital-Bold; color: #34AB00; }
+.logo-monitor { font-family: DS-Digital; color: #666666; }
+
+main h1, main h2 { color: #34AB00; font-weight: 500; }
+
+
+.row {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+@media (max-width: 991px) { .row { margin-left: 50px; margin-right: 50px; }}
+@media (max-width: 750px) { .row { margin-left: 15px; margin-right: 15px; }}
+
+.row-center p, .row-center h1, .row-center h2, .row-center span, .row-center img { max-width: 600px; }
 
 .disabled { opacity: 0.6; pointer-events: none; cursor: default; }
 
@@ -14,6 +66,51 @@ button, [type=button] {
   background-color: #f3f3f3;
 }
 
+
+/* Nav style */
+nav .logo-temp, nav .logo-monitor { font-size: 1.4em; }
+.navbar-brand, .navbar-toggle, .navbar-nav li a {
+    line-height: 60px;
+    height: 60px;
+    font-size: 0.9em;
+}
+.navbar-brand, .navbar-nav li a { padding-top: 0; }
+.navbar-toggle .icon-bar { width: 26px; height: 4px; }
+.navbar-toggle { padding: 16px; }
+.navbar-brand:hover { opacity: 0.8; }
+.navbar-toggle {
+  padding-right: 25px;
+  padding-left: 25px;
+  margin: 0;
+  border: 0;
+}
+.navbar {
+  margin: 0;
+  background-color: #f3f3f3;
+}
+/* Nav style end */
+
+header { background-color: white; overflow: hidden; /* Previously #4f924f */ }
+header h1 { color: dimgrey; font-weight: bold; }
+header h2 { color: grey; }
+
+.header-index {
+  background-image: url("/img/produkt_displayer_ljus.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  position: relative;
+}
+.header-index h1 { font-size: 2em; color: #f3f3f3; }
+.header-index h2 { font-size: 1.3em; color: #f3f3f3; }
+.header-index .logo-temp, .header-index .logo-monitor { font-size: 3em; }
+.header-index button { margin-top: 50px; }
+
+.header-subsite { min-height: 200px; }
+.header-subsite h2 { font-size: 2em; margin-top: 0; }
+.header-subsite .header-subsite-header { max-width: 500px; }
 
 .under-construction { position: absolute; right: 0; top: 0; height: 20vh; margin-right: -1vh; margin-top: -1vh;}
 
