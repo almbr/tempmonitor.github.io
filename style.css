@@ -69,7 +69,7 @@ button, [type=button] {
 
 
 /* Nav style */
-nav .logo-temp, nav .logo-monitor { font-size: 1.4em; }
+nav .logo-temp, nav .logo-monitor { font-size: 23px; }
 .navbar-brand, .navbar-toggle, .navbar-nav li a {
     line-height: 60px;
     height: 60px;
