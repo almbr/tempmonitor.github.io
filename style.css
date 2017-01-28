@@ -42,6 +42,7 @@ html { font-family: 'Roboto', sans-serif; }
 .logo-monitor { font-family: DS-Digital; color: #666666; }
 
 main h1, main h2 { color: #34AB00; font-weight: 500; }
+a, a:hover, a:focus, a:active, a:visited { color: #34AB00; opacity: 0.8; }
 
 
 .row {
@@ -182,8 +183,7 @@ footer h1 {
   border-style: none none solid none;
   border-bottom-width: 1px;
 }
-footer a { color: #f3f3f3; }
-footer a:hover, footer a:active, footer a:visited { color: #f3f3f3; }
+footer a, footer a:hover, footer a:active, footer a:visited, footer a:focus { color: #f3f3f3; opacity: 1; }
 footer i {
   width: 1em;
   margin-right: 0.5em;
