@@ -42,7 +42,7 @@ html { font-family: 'Roboto', sans-serif; }
 .logo-monitor { font-family: DS-Digital; color: #666666; }
 
 main h1, main h2 { color: #34AB00; font-weight: 500; }
-a, a:hover, a:focus, a:active, a:visited { color: #34AB00; opacity: 0.8; }
+a, a:hover, a:focus, a:active, a:visited { color: #5AB931; }
 
 
 .row {
@@ -88,6 +88,7 @@ nav .logo-temp, nav .logo-monitor { font-size: 23px; }
 .navbar {
   margin: 0;
   background-color: #f3f3f3;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.15);
 }
 /* Nav style end */
 
@@ -109,8 +110,16 @@ header h2 { color: grey; }
 .header-index .logo-temp, .header-index .logo-monitor { font-size: 3em; }
 .header-index button { margin-top: 50px; }
 
-.header-subsite { min-height: 200px; }
-.header-subsite h2 { font-size: 2em; margin-top: 0; }
+.header-subsite {
+  min-height: 200px;
+  color: white;
+  background: #5AB931; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #7cc75b, #34AB00); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #7cc75b, #34AB00); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #7cc75b, #34AB00); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #7cc75b, #34AB00); /* Standard syntax */
+}
+.header-subsite h2 { font-size: 2em; margin-top: 0; color: white; }
 .header-subsite .header-subsite-header { max-width: 500px; }
 
 .under-construction { position: absolute; right: 0; top: 0; height: 20vh; margin-right: -1vh; margin-top: -1vh;}
