@@ -52,10 +52,10 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class=""><a href="/">Home <span class="sr-only">(current)</span></a></li>
-          <li class=""><a href="shop.html">Shop</a></li>   <!-- /shop.html -->
-          <li class="active"><a href="about.html">About</a></li>   <!-- /about.html -->
-          <li class=""><a href="downloads.html">Downloads</a></li>   <!-- /downloads.html -->
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="shop.html">Shop</a></li>   
+          <li class="active"><a href="about.html">About</a></li>   
+          <li class=""><a href="#">Downloads</a></li> 
         </ul>
       </div>
     </div>
@@ -65,14 +65,52 @@
     <div class="row">
       <div class="header-subsite-header">
         <h2>About us</h2>
-        Kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-      </div>
+       We are a team of 3 students collaboratiing in a school project to operate a functional company. The temp monitor is just a small part of this project, but our most beloved one due to our high ambitions and goals with this company. It would help us alot if you could spread the word of this project to your possible intrested family and friends becuse we don't have any opportunity to advertise in large scales by ourselves.
     </div>
   </header>
 
   <main id="main" class="container-fluid">
 
-    <div class="row">
+  
+      <div class="row productshow">
+      <div class="col-md-3 col-md-push-9">
+        <div class="container" style="background-image: url(img/logo_gtg.svg); background-size: contain; margin-top: 30px;"></div>
+      </div>
+      <div class="col-md-9 col-md-pull-3">
+        <h1>A school project gone too far</h1>
+        <p>
+            This company orginates from a popular Swedish final project concept where students shall organize a group of people to operate a somewhat alike company. This concept is hold by "<a href="http://ungforetagsamhet.se/">ung företagsamhet</a>".
+            <br><br>
+            We chosed very early on to work with this togheter due to our high ambitions. We wanted to create a complex product that was easy to use for users. We had an idea early on of a problem we wanted to solve. We had a LAN were we all had issues with our computers and the only solution avalible to this is via software where a large part of the monitor has to be compromised. So we chosed to create a contraption to capture the necessary values to digonize your computer on a secoundary monitor. We also saw a opertunity for home server-users to have s    uch a tool where a montitor isn't avalible.
+            <br><br>
+            With our great technical orgin from our senior high school <a href="http://gtg.se">GTG</a> and through personal projects, we have hugh opportunities to succed.
+            
+        </p>
+      </div>
+    </div>
+
+    <div class="row productshow">
+      <div class="col-md-3">
+        <div class="container" style="background-image: url(img/sweden_map.svg); background-size: contain;"></div>
+      </div>
+      <div class="col-md-9">
+        <h1>Made in Sweden</h1>
+        <p>
+          We have developed hardware and software from scratch. If you are interested in our project, you can access our repository at <a href="https://github.com/Tempmonitor/">Github</a>. It's completely Open Source and free for use for everybody.
+            <br><br>
+            We also manufacture ourselves. Circuit boards and components are delivered to us requested from our designs. After that solder, assemble and program the microcontroller.
+          </p><br>
+          <p>  
+          And so Temp monitor is <span style="color: #005293;">Made </span> <span style="color: #FECB00;">in </span> <span style="color: #005293;">Sweden </span>.
+        </p>
+        
+        
+      </div>
+    </div>
+  </main>
+    
+    
+     <div class="row">
       <div class="col-sm-4">
         <div class="personcard center-block">
           <div class="personcard-image">
@@ -82,9 +120,9 @@
             <h3>Axel Nilsson</h3>
             <p>Product development</p>
             <ul class="list-unstyled">
-              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
+              <a href="https://www.facebook.com/axelnilsson42?fref=ts"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
               <a href="https://github.com/nilssonaxel" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="https://linkedin.com/in/axel-nilsson-330084131"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
               <a href="mailto:axel@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
@@ -100,9 +138,9 @@
             <h3>Erik Almbratt</h3>
             <p>Web development</p>
             <ul class="list-unstyled">
-              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
+              <a href="https://www.facebook.com/erik.almbratt?fref=ts"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
               <a href="https://github.com/tsuum" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="https://linkedin.com/in/erik-almbratt-624609109/"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
               <a href="mailto:erik@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
@@ -110,7 +148,7 @@
       </div>
 
       <div class="col-sm-4">
-        <div class="personcard center-block">
+        <div class="personcard center-block">   
           <div class="personcard-image">
             <img src="img/oskarportrait.jpg" alt="Portrait of Axel, Product Developer">
           </div>
@@ -118,49 +156,15 @@
             <h3>Oskar Ogarp</h3>
             <p>CEO & Economics</p>
             <ul class="list-unstyled">
-              <!--<a><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
-              <!--<a><li><i class="fa fa-github" aria-hidden="true"></i></li></a>-->
-              <!--<a><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>-->
+              <a href="https://facebook.com/oskarogarp"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+              <a href="https://github.com/valture" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
+              <a href="https://linkedin.com/in/oskar-ogarp-19a284130"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
               <a href="mailto:oskar@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row productshow">
-      <div class="col-md-3 col-md-push-9">
-        <div class="container" style="background-image: url(img/logo_gtg.svg); background-size: contain; margin-top: 30px;"></div>
-      </div>
-      <div class="col-md-9 col-md-pull-3">
-        <h1>A school project gone too far</h1>
-        <p>
-          We have developed both hardware and software from scratch. If you are interested you can access all our work as it is hosted publicly on github. Open Source and free for anyone to use.
-          <br><br>
-          We also manufacture ourselves. Circuit boards and components are delivered to us. After that we program, assemble and solder everything.
-          <br><br>
-          And so Temp monitor is Made in Sweden.
-        </p>
-      </div>
-    </div>
-
-    <div class="row productshow">
-      <div class="col-md-3">
-        <div class="container" style="background-image: url(img/sweden_map.svg); background-size: contain;"></div>
-      </div>
-      <div class="col-md-9">
-        <h1>Made in Sweden</h1>
-        <p>
-          Temp monitor is an open source and hardware monitor to show system resources such as CPU and GPU temperature, fan speeds, RAM usage, GPU and CPU load.
-          <br><br>
-          The monitor is connected to your computer via USB and can be customised with its associated program.
-          <br><br>
-          Temp monitor is soon to be availible for Windows with planned support for Linux coming up.
-        </p>
-      </div>
-    </div>
-  </main>
-
 
 
 	<footer>
@@ -169,11 +173,11 @@
         <div class="col-md-4">
   			  <h1>Navigation</h1>
           <ul class="list-unstyled">
-            <li><a href="/#">Home</a></li>
-            <li><a href="/info/om-oss/#våra-tjänster">Shop</a></li>
-            <li><a href="/info/redaktionen/">Downloads</a></li>
-            <li><a href="/info/hitta-oss/">About us</a></li>
-            <li><a href="/info/redaktionen/">Documentation</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="https://github.com/Tempmonitor/">Documentation</a></li>
             <li><a href="/info/lediga-tjänster/">Legal</a></li>
           </ul>
         </div>
