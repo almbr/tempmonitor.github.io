@@ -169,7 +169,7 @@ header h2 { color: grey; }
   margin-bottom: 10px;
 }
 .personcard-image { width: 100%; overflow: hidden; }
-.personcard-image img{ width: 100%; }
+.personcard-image img { width: 100%; }
 .personcard-content { background-color: white; padding: 30px; }
 .personcard-content h3 { color: black; margin-top: 0; font-size: 1em; }
 .personcard-content p { font-size: 0.8em; }

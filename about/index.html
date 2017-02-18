@@ -5,13 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-
-  <script src="https://use.fontawesome.com/3d819bd394.js"></script>
-  <script src="script.js"></script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-touch-icon-60x60.png">
@@ -37,7 +32,6 @@
 
 
 <body>
-
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -52,9 +46,9 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class=""><a href="index.html">Home</a></li>
-          <li class=""><a href="shop.html">Shop</a></li>
-          <li class="active"><a href="about.html">About</a></li>
+          <li class=""><a href="/">Home</a></li>
+          <li class=""><a href="/shop">Shop</a></li>
+          <li class="active"><a href="/about">About</a></li>
           <li class=""><a href="#">Downloads</a></li>
         </ul>
       </div>
@@ -73,10 +67,7 @@
 
 
   <div class="row productshow">
-      <div class="col-md-3 col-md-push-9">
-        <div class="container" style="background-image: url(img/logo_gtg.svg); background-size: contain; max-height: 40vw;"></div>
-      </div>
-      <div class="col-md-9 col-md-pull-3">
+      <div class="col-md-9">
         <h1>A school project gone too far</h1>
         <p>
             This company orginates from a popular Swedish final project concept where students shall organize a group of people to operate a startup company. This concept is hold by "<a href="http://ungforetagsamhet.se/">ung företagsamhet</a>".
@@ -84,12 +75,12 @@
             We chose very early on to work with this togheter due to our high ambitions. We wanted to create a complex product that was easy to use for users. We had an idea early on of a problem we wanted to solve. We had a LAN were we all had issues with our computers and the only solution avalible to this is via software where a large part of the monitor has to be compromised. So we chosed to create a contraption to capture the necessary values to diagnose your computer on a secondary monitor. We also saw an opportunity for home server-users to have such a tool where a montitor isn't avalible.
         </p>
       </div>
+      <div class="col-md-3">
+        <div class="container" style="background-image: url(img/logo_gtg.svg); background-size: contain; max-height: 40vw; margin-top: 30px; margin-bottom: -30px;"></div>
+      </div>
   </div>
     <div class="row productshow">
-      <div class="col-md-3">
-        <div class="container" style="background-image: url(img/sweden_map.svg); background-size: contain; max-height: 40vw;"></div>
-      </div>
-      <div class="col-md-9">
+      <div class="col-md-9 col-md-push-3">
         <h1>Made in Sweden</h1>
         <p>
           We have developed hardware and software from scratch. If you are interested in our project, you can access our repository at <a href="https://github.com/Tempmonitor/">Github</a>. It's completely Open Source and free for use for everybody.
@@ -99,8 +90,9 @@
           <p>
           And so Temp monitor is <span style="color: #005293;">Made </span> <span style="color: #FECB00;">in </span> <span style="color: #005293;">Sweden </span>.
         </p>
-
-
+      </div>
+      <div class="col-md-3 col-md-pull-9">
+        <div class="container" style="background-image: url(img/sweden_map.svg); background-size: contain; max-height: 40vw;  margin-top: 30px; margin-bottom: -50px;"></div>
       </div>
     </div>
   </main>
@@ -116,10 +108,9 @@
             <h3>Axel Nilsson</h3>
             <p>Product development</p>
             <ul class="list-unstyled">
-              <a href="https://www.facebook.com/axelnilsson42?fref=ts"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
               <a href="https://github.com/nilssonaxel" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a href="https://linkedin.com/in/axel-nilsson-330084131"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a href="mailto:axel@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <a href="https://linkedin.com/in/axel-nilsson-330084131" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+              <a href="mailto:axel@tempmonitor.se" target="_blank"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -134,10 +125,9 @@
             <h3>Erik Almbratt</h3>
             <p>Web development</p>
             <ul class="list-unstyled">
-              <!--<a href="https://www.facebook.com/erik.almbratt?fref=ts"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>-->
               <a href="https://github.com/tsuum" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a href="https://linkedin.com/in/erik-almbratt-624609109/"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a href="mailto:erik@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <a href="https://linkedin.com/in/erik-almbratt-624609109/" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+              <a href="mailto:erik@tempmonitor.se" target="_blank"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -152,10 +142,10 @@
             <h3>Oskar Ogarp</h3>
             <p>CEO & Economics</p>
             <ul class="list-unstyled">
-              <a href="https://facebook.com/oskarogarp"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+              <a href="https://facebook.com/oskarogarp" target="_blank"><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
               <a href="https://github.com/valture" target="_blank"><li><i class="fa fa-github" aria-hidden="true"></i></li></a>
-              <a href="https://linkedin.com/in/oskar-ogarp-19a284130"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
-              <a href="mailto:oskar@tempmonitor.se"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+              <a href="https://linkedin.com/in/oskar-ogarp-19a284130" target="_blank"><li><i class="fa fa-linkedin" aria-hidden="true"></i></li></a>
+              <a href="mailto:oskar@tempmonitor.se" target="_blank"><li><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
             </ul>
           </div>
         </div>
@@ -169,12 +159,11 @@
         <div class="col-md-4">
   			  <h1>Navigation</h1>
           <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="downloads.html">Downloads</a></li>
-            <li><a href="about.html">About us</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/downloads">Downloads</a></li>
+            <li><a href="/about">About us</a></li>
             <li><a href="https://github.com/Tempmonitor/">Documentation</a></li>
-            <li><a href="/info/lediga-tjänster/">Legal</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -197,6 +186,10 @@
       </div>
     </div>
 	</footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/3d819bd394.js"></script>
 
 </body>
 </html>
